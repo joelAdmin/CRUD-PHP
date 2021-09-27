@@ -1,0 +1,9 @@
+mysql -h localhost -u root -p
+visualisar db
+show databases;
+usar db
+use db_sistem;
+
+dar privilegios
+
+GRANT ALL PRIVILEGES ON db_sistem.* TO 'gpstracker_user'@'localhost' IDENTIFIED BY 'gpstracker';

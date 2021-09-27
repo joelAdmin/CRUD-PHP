@@ -1,0 +1,45 @@
+body{
+font:12px Arial, Tahoma, Verdana, Helvetica, sans-serif;
+/*background-color:#BECEDC;*/
+color:#000;
+}
+
+a h1{
+font-size:35px;	
+color:#FFF;
+}
+
+h2{
+color:#FC0;
+font-size:15px;	
+}
+
+table{
+width:100%;
+height:auto;
+margin:10px 0 10px 0;
+border-collapse:collapse;
+text-align:center;
+/*background-color:#365985;*/
+color:#000;
+}
+
+table td,th{
+border:1px solid black;
+}
+
+table th{
+color:#000 ;	
+text-align:center;
+background-color: #a4a4a4;
+}
+
+
+.menu{
+background-color:#69C;
+color:#FFF;
+}
+
+.menu a{
+color:#FFF;	
+}

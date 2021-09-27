@@ -1,0 +1,71 @@
+
+/* Change order specific
+-----------------------------------------------------------------------*/
+table.change_order_items { 
+  font-size: 8pt;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+table.change_order_itemsd>td { 
+  font-size: 8pt;
+  width: 20%;
+  border-collapse: collapse;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color:#FFF;
+}
+table.change_order_items>tbody { 
+  border: 1px solid black;
+}
+
+table.change_order_items>tbody>tr>th { 
+  border-bottom: 1px solid black;
+ 
+}
+
+table.change_order_items>tbody>tr>td { 
+   border-top: 1px solid black;
+   border-right: 1px solid black;
+   border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0.5em;
+}
+
+
+
+td.change_order_total_col { 
+  padding-right: 4pt;
+  text-align: right;
+}
+
+td.change_order_unit_col { 
+  padding-left: 2pt;
+  text-align: left;
+}
+
+body{
+margin-top:50px;
+margin-left:40px;
+margin-right:40px;
+margin-bottom:40px;
+}
+table th{
+}
+table{
+border-collapse:collapse;
+border:#c0c0c0 solid 1px;
+}
+table td,th{
+text-align:center;
+
+}
+p{
+text-align:justify;
+
+}
+h2{
+color:#003366;
+border-bottom:#003366 solid 3px;
+}

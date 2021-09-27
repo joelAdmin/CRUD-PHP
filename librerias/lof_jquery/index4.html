@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+     <title>Lof JSliderNews 2.0 - плагин слайдшоу на jQuery | pcvector.net</title>
+     <link rel="shortcut icon" href="/favicon.ico" />
+     <link rel="stylesheet" type="text/css" href="css/layout.css" />
+     <link rel="stylesheet" type="text/css" href="css/style4.css" />
+	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+     <script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
+     <script language="javascript" type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+ $(document).ready( function(){	
+		// buttons for next and previous item						 
+		var buttons = { previous:$('#jslidernews1 .button-previous') ,
+						next:$('#jslidernews1 .button-next') };
+		 $obj = $('#jslidernews1').lofJSidernews( { interval : 4000,
+											 	easing			: 'easeInOutQuad',
+												duration		: 1200,
+												auto		 	: false,
+												maxItemDisplay  : 3,
+												startItem:1,
+												navPosition     : 'horizontal', // horizontal
+												navigatorHeight : null,
+												navigatorWidth  : null,
+												mainWidth:980,
+												buttons:buttons} );		
+	});
+</script>
+
+</head>
+<body>
+
+<div class="topHeader">
+	<a class="backArticle" href="http://pcvector.net/scripts/slideshow_and_scroller/327-lof-jslidernews-20-plagin-slaydshou.html">Назад к статье &gt;&gt;&gt;</a>
+</div>
+
+	<div id="container">
+    		<h1><strong>Lof JSliderNews 2.0</strong> -  jQuery и плагин Easing</h1>
+       
+ <p>
+	<strong> Направление: Вправо - Влево. Навигация по миниатюрам.</strong> 
+    Плагин позволяет использовать колесико мыши для перелистывания слайдов
+</p>       
+<!------------------------------------- THE CONTENT ------------------------------------------------->
+<div id="jslidernews1" class="lof-slidecontent" style="width:980px; height:340px;">
+	<div class="preload"><div></div></div>
+    		 <div  class="button-previous">Назад</div>
+              <div  class="button-next">Вперед</div>
+    		 <!-- MAIN CONTENT --> 
+              <div class="main-slider-content" style="width:980px; height:340px;">
+                <ul class="sliders-wrap-inner">
+                    <li>
+                            <img src="images/thumbl_980x340.png" title="Новость 1" >           
+                          <div class="slider-description">
+                            <div class="slider-meta"><a target="_parent" title="Новость 1" href="#Category-1">/ Новость 1 /</a> <i> — Четверг, Май 3, 2012 19:00</i></div>
+                            <h4>Новость 1</h4>
+                            <p>Один из лучших телефонов современности, хотите узнать больше...
+                            <a class="readmore" href="#">Подробнее </a>
+                            </p>
+                         </div>
+                    </li> 
+                   <li>
+                      <img src="images/thumbl_980x340_002.png" title="Новость 2" >           
+                         <div class="slider-description">
+                           <div class="slider-meta"><a target="_parent" title="Новость 2" href="#Category-2">/ Новость 2 /</a> 	<i> — Четверг, Май 3, 2012 19:00</i></div>
+                            <h4>Новость 2</h4>
+                            <p>Отличнейший телефон с кучей нужных и не нужных функций...
+                            <a class="readmore" href="#">Подробнее </a>
+                            </p>
+                         </div>
+                    </li> 
+                   <li>
+                      <img src="images/thumbl_980x340_003.png" title="Новость 3" >            
+                        <div class="slider-description">
+                          <div class="slider-meta"><a target="_parent" title="Новость 3" href="#Category-3">/ Новость 3 /</a> 	<i> — Четверг, Май 3, 2012 19:00</i></div>
+                            <h4>Новость 3</h4>
+                            <p>Просто возьмите мобильный в руки и вы не захотите его отдавать...
+                            <a class="readmore" href="#">Подробнее </a>
+                            </p>
+                         </div>
+                    </li> 
+                    <li>
+                      <img src="images/thumbl_980x340_004.png" title="Новость 4" >            
+                        <div class="slider-description">
+                          <div class="slider-meta"><a target="_parent" title="Новость 4" href="#Category-4">/ Новость 4 /</a>	<i> — Четверг, Май 3, 2012 19:00</i></div>
+                            <h4>Новость 4</h4>
+                            <p>Отличный девайс для интересного времяпрепровождения вне дома...
+                            <a class="readmore" href="#">Подробнее </a>
+                            </p>
+                         </div>
+                    </li> 
+                    <li>
+                      <img src="images/thumbl_980x340_005.png" title="Новость 5" >            
+                        <div class="slider-description">
+                           <div class="slider-meta"><a target="_parent" title="Новость 5" href="#">/ Новость 5 /</a>	<i> — Четверг, Май 3, 2012 19:00</i></div>
+                           <h4>Новость 5</h4>
+                            <p>Видели рекламу этого ноутбука по ТВ? Тогда обязательно посмотрите...
+                            <a class="readmore" href="#">Подробнее </a>
+                            </p>
+                         </div>
+                    </li> 
+                    <li>
+            
+                      <img src="images/thumbl_980x340_006.png" title="Новость 6" >            
+                        <div class="slider-description">
+                          <div class="slider-meta"><a target="_parent" title="Новость 6" href="#">/ Новость 6 /</a>	<i> — Четверг, Май 3, 2012 19:00</i></div>
+                            <h4>Новость 6</h4>
+                            <p>"Моя прелесть!" Иначе и не скажешь. Копите деньги друзья...
+                            <a class="readmore" href="#">Подробнее </a>
+                            </p>
+                         </div>
+                    </li> 
+                     <li>
+                      <img src="images/thumbl_980x340_007.png" title="Новость 7" >            
+                        <div class="slider-description">
+                          <div class="slider-meta"><a target="_parent" title="Новость 7" href="#">/ Новость 7 /</a>	<i> — Четверг, Май 3, 2012 19:00</i></div>
+                            <h4>Новость 7</h4>
+                            <p>Отличный ноутбук, но можно найти такой же и без перламутровых пуговиц...
+                            <a class="readmore" href="#">Подробнее </a>
+                            </p>
+                         </div>
+                    </li> 
+                      <li>
+                      <img src="images/thumbl_980x340_008.png" title="Новость 8" >            
+                        <div class="slider-description">
+        
+                          <div class="slider-meta"><a target="_parent" title="Новость 8" href="#">/ Новость 8 /</a>	<i> — Четверг, Май 3, 2012 19:00</i></div>
+                            <h4>Новость 8</h4>
+                            <p>Ах планшет, планшет. А нужен ли ты вообще ?...
+                                <a class="readmore" href="#">Подробнее </a>
+                            </p>
+                         </div>
+                    </li> 
+                  </ul>  	
+            </div>
+ 		   <!-- END MAIN CONTENT --> 
+           <!-- NAVIGATOR -->
+           	<div class="navigator-content">
+                  <div class="button-control"><span></span></div>	
+                  <div class="navigator-wrapper">
+                        <ul class="navigator-wrap-inner">
+                           <li><span>1</span></li>
+                           <li><span>2</span></li>
+                           <li><span>3</span></li>
+                           <li><span>4</span></li>    
+                           <li><span>5</span></li>
+                           <li><span>6</span></li>       
+                           <li><span>7</span></li>       
+                           <li><span>8</span></li>          		
+                        </ul>
+                  </div>
+                
+             </div> 
+          <!----------------- END OF NAVIGATOR --------------------->
+ </div> 
+
+
+<!------------------------------------- END OF THE CONTENT ------------------------------------------------->
+ <p> 
+<a href="index.html">Демо 1</a>  | <a href="index2.html">Демо 2</a>  |  <a href="index3.html">Демо 3</a> | <a href="index4.html">Демо 4</a> | <a href="index5.html">Демо 5</a> | <a href="index6.html">Демо 6</a>
+<div id="footer">
+ <a href="http://landofcoder.com">LandOfCoder.Com</a>
+</div>
+    </div>
+	
+<!-- pcvector.net -->
+<script type="text/javascript" src="http://pcvector.net/templates/pcv/js/pcvector.js"></script>
+<!-- /pcvector.net -->	
+</body>
+</html>

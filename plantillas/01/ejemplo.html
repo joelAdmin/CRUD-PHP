@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Escuela </title>
+    
+      <!-- **********+libreria prototype ************************************ -->
+        <!-- Core CSS - Include with every page -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Dashboard -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="css/plugins/timeline/timeline.css" rel="stylesheet">
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <script src="js/jquery-1.10.2.js"></script>
+    <link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+
+   <!-- <link href="plantilla/css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+    <script src="plantilla/js/jquery-ui-1.10.4.custom.js"></script>-->
+   
+   <!-- <link href="{{STATIC_URL}}style.css" rel="stylesheet">
+    
+    
+    <script src="{{STATIC_URL}}js/funciones_jquery.js"></script>
+
+   <link href="{{STATIC_URL}}css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+    <script src="{{STATIC_URL}}js/jquery-ui-1.10.4.custom.js"></script>-->
+     <!--<link href="{{STATIC_URL}}datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
+     <script src="{{STATIC_URL}}datepicker/js/bootstrap-datepicker.js"></script>-->
+
+     
+   
+   
+  </head>
+  <body>
+  <!-- { load biblioteca_extra } -->
+  
+    <div id="wrapper">
+
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="log" class="navbar-brand" href="/index/">PGEG 1.1</a>
+
+            </div>
+
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <a><em>Usuario: </em></a> 
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tag fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                       <li>
+                            <a href="/nuevo/dictamen/" >
+                                <div>
+                                    <i class="fa fa-plus fa-fw"></i> Nueva Dictamen
+                                    <span class="pull-right text-muted small"><i class="fa fa-usd fa-fw"></i></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="/consultar/dictamen/">
+                                <div>
+                                    <i class="fa fa-cog fa-fw"></i> Consultar Dictamen
+                                    <span class="pull-right text-muted small"><i class="fa fa-usd fa-fw"></i></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-info-circle fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a onclick="popitup('/generar/pdf/manual/', 'AYUDA', 520, 600);" href="#">
+                                <div>
+                                    <i class="fa fa-download fa-fw"></i> Manual de usuario
+                                    <span class="pull-right text-muted small">Descargar Pdf</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                       
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong></strong>
+                                
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                       <!-- <li><a href="/nuevo/usuario/"><i class="fa fa-user fa-fw"></i> Nuevo Usuario</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Conf. Usuarios</a>
+                        </li>
+                        <li class="divider"></li>-->
+                      
+                            <li><a href="/usuario/salir/"><i class="fa fa-sign-out fa-fw"></i> Salir</a></li>
+                       
+                            <li><a href="/usuario/entrar/"><i class="fa fa-off fa-fw"></i> Iniciar Seccion</a></li>
+                      
+
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+        </nav>
+        <!-- /.navbar-static-top -->
+
+        <nav class="navbar-inverse2 navbar-static-side" role="navigation">
+            <div class="sidebar-collapse legend">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        
+                        <!-- /input-group -->
+                    </li>
+
+
+                   
+                    
+                </ul>
+                <!-- /#side-menu -->
+            </div>
+            <!-- /.sidebar-collapse -->
+        </nav>
+        <!-- /.navbar-static-side -->
+        <div id="page-wrapper">
+
+              <div class="row">
+                <div class="col-lg-12">
+                    <div id="contenedor" class="">
+
+                    <!-- CONTENIDO -->
+                    <div style="display:None;" id="modal_2" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">x</button>
+								<h4 class="modal-title"></h4>
+							</div>
+                    		rrt5t5t8i8i8ii8ioi
+                    		[0[[[[]]]]]
+
+                   
+                    		</div>
+                    	</div>
+                    </div>
+
+
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                    <!-- FIN CONTENIDO -->  
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+        </div>
+         
+    </div>
+ <script type="text/javascript">
+    $(document).ready(function() {
+    $('#modal_2').modal('show');
+    });
+</script>
+    
+
+    <!-- Core Scripts - Include with every page
+    <script src="{{STATIC_URL}}admin/js/jquery-1.10.2.js"></script> 
+    <script src="{{STATIC_URL}}admin/js/bootstrap.min.js"></script>
+    <script src="{{STATIC_URL}}admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+   Page-Level Plugin Scripts - Dashboard 
+    <script src="{{STATIC_URL}}admin/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="{{STATIC_URL}}admin/js/plugins/morris/morris.js"></script>
+
+   SB Admin Scripts - Include with every page 
+    <script src="{{STATIC_URL}}admin/js/sb-admin.js"></script>
+ Page-Level Demo Scripts - Dashboard - Use for reference 
+    <script src="{{STATIC_URL}}admin/js/demo/dashboard-demo.js"></script>-->
+
+
+
+</body>
+
+ <!--<script src="administrador/admin/js/bootstrap.min.js"></script>
+    <script src="administrador/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+
+    <script src="administrador/admin/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="administrador/admin/js/plugins/morris/morris.js"></script>
+
+   
+    <script src="administrador/admin/js/sb-admin.js"></script>
+
+   
+    <script src="administrador/admin/js/demo/dashboard-demo.js"></script>-->
+    
+</html>
